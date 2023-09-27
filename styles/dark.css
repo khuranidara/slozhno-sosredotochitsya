@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  background-color: #000028;
   --button-lable-color: #FF0070;
   --button-border-color: #FF0070;
   --bttn-brdr-clr-hvr: rgba(255, 0, 112, 0.40);
@@ -26,6 +27,7 @@
 
 @media (prefers-color-scheme:dark) {
   :root {
+    background-color: #000028;
     --button-lable-color: #FF0070;
     --button-border-color: #FF0070;
     --bttn-brdr-clr-hvr: rgba(255, 0, 112, 0.40);
