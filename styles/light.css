@@ -15,7 +15,7 @@
   --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
   --bttn-clr-focus:#353430;
   --cover-img: url('/images/cover-image-light.png');
-  --title-txt-clr: #FFC2E6;;
+  --title-txt-clr: #FFC2E6;
   --subtitle-txt-clr:#353430;
   --subtitle-backgrnd:#FF8DCB;
   --txt-shadow: 4px 4px 0px #FF8DCB;
@@ -34,7 +34,7 @@
     --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
     --bttn-clr-focus:#353430;
     --cover-img: url('/images/cover-image-light.png');
-    --title-txt-clr: #FFC2E6;;
+    --title-txt-clr: #FFC2E6;
     --subtitle-txt-clr:#353430;
     --subtitle-backgrnd:#FF8DCB;
     --txt-shadow: 4px 4px 0px #FF8DCB;

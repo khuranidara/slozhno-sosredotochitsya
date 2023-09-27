@@ -11,6 +11,11 @@
   padding-right:10px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   padding-block-start: 10px;
   padding-block-end: 10px;
@@ -88,7 +93,6 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
-  cursor: pointer;
   width: 70px;
   height: 28px;
   background-color: transparent;
@@ -104,8 +108,8 @@
 }
 
 .header__theme-menu-button_active {
-   /* Делаем кнопку недоступной для клика */
-   pointer-events: none;
+  /* Делаем кнопку недоступной для клика */
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -187,6 +191,7 @@ main section {
   text-decoration: none;
   text-shadow: var(--link-shadow);
 }
+
 .article-link:hover {
   border-bottom: 1px solid var(--grafitovyy); 
 }
@@ -240,7 +245,6 @@ main section {
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; 
-  font-style: normal;
   padding-bottom: 10px; /*PP*/
 }
 .footer::before,
@@ -264,7 +268,6 @@ main section {
   border-bottom: 1px solid var(--dec-el);
   border-left: 1px solid var(--dec-el);
 }
-
 
 @media screen and (width >= 768px)  {
   /* Здесь описывайте стили для планшетов */
