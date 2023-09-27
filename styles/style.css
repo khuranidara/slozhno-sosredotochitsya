@@ -188,13 +188,13 @@ main section {
 }
 
 .article-link:hover {
-  border-bottom: 1px solid var(--grafitovyy); 
+  border-bottom: 1px solid var(--button-border-color); 
 }
 
 .article-link:focus {
   padding: 0px 2px;
   outline: none; 
-  border: 1px solid var(--grafitovyy);
+  border: 1px solid var(--button-border-color);
 }
 
 .sub-subsection-title {
@@ -265,11 +265,14 @@ main section {
 }
 
 @media screen and (width >= 768px) {
-  /* Здесь описывайте стили для планшетов */
+
+  /* Здесь стили для планшетов */
+
   .page {
     padding-right: 20px;
     padding-left: 20px;
   }
+
   .header {
     padding-block-start: 20px;
     padding-block-end: 20px;
@@ -284,23 +287,28 @@ main section {
     bottom: 20px;
     left: 0;
   }
+
   .rec-label {
     top: 20px;
   }
+
   .header__theme-menu {
     align-self: center;
     margin-block-start: 82px; /*PP*/
   }
+
   .header__title {
     align-self: center;
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ; /* Для планшета и десктопа */
   }
+
   .header__subtitle {
     align-self: center;
     width: 50%; /* Занимает 50% ширины контейнера */
     margin-block-end: 78px /*PP*/
   }
+
   main section:not(:last-child) {
     margin-bottom: 80px;
   }
@@ -316,45 +324,56 @@ main section {
     column-gap: 20px; /* Задаем промежуток между колонками */
     margin-block-start: 60px;
   }
+
   .section-title {
     grid-row: 1 / span 4; /* Занимает с 1 по 4 строку */
     grid-column: 1 / span 1; /* Занимает 1-ю колонку (1/3 экрана) */
   }
+
   .first .subsection-title:first-of-type {
     margin-block-start: 0;
-  }  
+  }
+
   .second .section-title {
     width: calc((100% - 40px)/3); /*Вычитаем 40px (20px слева и 20px справа) из 1/3 всей строки*/
   }
+
   .third {
     display: grid;
     grid-template-columns: 1fr 2fr; 
     grid-template-rows: repeat(11, minmax(23px, max-content));
     column-gap: 20px; /* Задаем промежуток между колонками */
   }
+
   .third .section-title {
     grid-row: 1 / span 11;
     grid-column: 1 / span 1;
   }
+
   .third .subsection-title {
     margin-block-start: 0;
   }
+
   .third .sub-subsection-title {
     margin-block-start: 20px;
   }
+
   .img-container {
     margin-block-start: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
   .subsection-title {
     grid-column: auto;
     grid-row: auto;
   }
+
   .gallery-section {
     gap: 20px;
   }
+
   .img-container img {
     width: 100%;
     height: 100%;
@@ -385,15 +404,20 @@ main section {
     grid-column: 2 / 4; /* Городская улица*/
     grid-row: 3/ 4;
   }
+
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ; /* Для планшета и десктопа */
   }
+
   .footer::before {
     top: 20px;
   }
 }
+
 @media screen and (width >= 1024px) {
+
   /* Здесь описывайте стили для больших экранов */
+
   .header__theme-menu {
     align-self:flex-start;
     justify-self: center;
@@ -403,19 +427,24 @@ main section {
   .header__theme-menu-list {
     flex-direction: row;
   }
+
   .header__title {
     text-shadow: 4px 4px 0px #FF0070;
     margin-block-start: 85px;
   }
+
   .header__subtitle {
     margin-block-end: 55px;
   }
+
   .first {
     column-gap: 12px;
   }
+
   .third {
     column-gap: 12px;
   }
+  
   .second-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -3,7 +3,6 @@
   и их переопределение под различные устройства
 */
 :root {
-  --themebackgroundclr: #FFF1F7; /* Розовый цвет фона по умолчанию */
   --button-border-color: #353430;
   --button-lable-color: #353430;
   --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);

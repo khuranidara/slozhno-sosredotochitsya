@@ -9,7 +9,6 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --dis-none: none; /* Элементы будут скрыты в светлой теме */
-  --themebackgroundclr: #FFF1F7; /* Розовый цвет фона по умолчанию */
   --button-border-color: #353430;
   --button-lable-color: #353430;
   --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
@@ -26,9 +25,9 @@
   --sub-subsection-title-txt-clr:#353430;
   --dec-el:#353430;
 }
+
 @media (prefers-color-scheme:light) {
   :root {
-    --themebackgroundclr: #FFF1F7; /* Розовый цвет фона по умолчанию */
     --button-border-color: #353430;
     --button-lable-color: #353430;
     --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
