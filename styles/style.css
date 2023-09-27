@@ -25,7 +25,7 @@
 /* Стили для декоративных уголков */
 .header::before,
 .header::after {
-  content: ''; 
+  content: '';
   position: absolute;
   width: 25px;
   height: 25px;
@@ -34,7 +34,7 @@
 .header::before {
   top: 10px;
   right: 0;
-  border-top: 1px solid var(--dec-el); 
+  border-top: 1px solid var(--dec-el);
   border-right: 1px solid var(--dec-el);
 }
 
@@ -123,7 +123,7 @@
   font-weight: 700;
   line-height: 82.5%;
   grid-row: 2;
-  justify-self: start; 
+  justify-self: start;
   align-self: center;
 }
 
@@ -193,7 +193,7 @@ main section {
 
 .article-link:focus {
   padding: 0px 2px;
-  outline: none; 
+  outline: none;
   border: 1px solid var(--button-border-color);
 }
 
@@ -239,12 +239,12 @@ main section {
   font-family: 'IBM Plex Mono', sans-serif;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; 
+  line-height: 82.5%;
   padding-bottom: 10px; /*PP*/
 }
 .footer::before,
 .footer::after {
-  content: ''; 
+  content: '';
   position: absolute;
   width: 25px;
   height: 25px;
@@ -253,7 +253,7 @@ main section {
 .footer::before {
   top: -5px; /*PP*/
   right: 0;
-  border-top: 1px solid var(--dec-el); 
+  border-top: 1px solid var(--dec-el);
   border-right: 1px solid var(--dec-el);
 }
 
@@ -319,7 +319,7 @@ main section {
 
   .first {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(4, minmax(23px, max-content));
     column-gap: 20px; /* Задаем промежуток между колонками */
     margin-block-start: 60px;
@@ -340,7 +340,7 @@ main section {
 
   .third {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(11, minmax(23px, max-content));
     column-gap: 20px; /* Задаем промежуток между колонками */
   }
