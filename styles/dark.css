@@ -17,10 +17,11 @@
   --main-content-subtitle:#FF0070;
   --main-subtitle-txt-clr: #000028;
   --main-txt-clr: #F1B2CE;
-  --link-shadow: 1px 2px 0px #FF0070;
+  --link-shadow: 2px 2px 0px #FF0070;
   --sub-subsection-title-txt-clr: #000028;
   --dec-el:#FF0070;
   --dis-none: visible; /* Элементы будут видимы в тёмной теме */
+  --footer-shadow: 2px 2px 0px #FF0070;
 }
 
 @media (prefers-color-scheme:dark) {
@@ -37,9 +38,10 @@
     --main-content-subtitle:#FF0070;
     --main-subtitle-txt-clr: #000028;
     --main-txt-clr: #F1B2CE;
-    --link-shadow: 1px 2px 0px #FF0070;
+    --link-shadow: 2px 2px 0px #FF0070;
     --sub-subsection-title-txt-clr: #000028;
     --dec-el:#FF0070;
     --dis-none: visible; /* Элементы будут видимы в тёмной теме */
+    --footer-shadow: 2px 2px 0px #FF0070;
   }
 }

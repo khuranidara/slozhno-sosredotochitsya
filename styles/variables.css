@@ -12,11 +12,12 @@
   --subtitle-txt-clr:#353430;
   --subtitle-backgrnd:#FF8DCB;
   --txt-shadow: 4px 4px 0px #FF8DCB;
-  --link-shadow: 1px 2px 0px #FF8DCB;
+  --link-shadow: 2px 2px 0px #FF8DCB;
   --main-content-subtitle:#353430;
   --main-subtitle-txt-clr:#353430;
   --main-txt-clr: #353430;
   --sub-subsection-title-txt-clr:#353430;
   --dec-el:#353430;
   --dis-none: none; /* По умолчанию элементы скрыты */
+  --footer-shadow: 2px 2px 0px #FF0070;
 }

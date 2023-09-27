@@ -72,7 +72,7 @@
 
 .header__theme-menu {
   grid-row: 1;
-  justify-self: end; 
+  justify-self: end;
   align-self: center;
   margin-block-start: 30px; /*PixelPerfect*/
 }
@@ -235,7 +235,7 @@ main section {
 .footer-title {
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   color:var(--title-txt-clr);
-  text-shadow: var(--txt-shadow);
+  text-shadow: var(--footer-shadow);
   font-family: 'IBM Plex Mono', sans-serif;
   font-style: normal;
   font-weight: 700;
