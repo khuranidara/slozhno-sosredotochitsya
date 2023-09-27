@@ -27,6 +27,7 @@
   --dec-el:#FF0070;
   --dis-none: visible; /* Элементы будут видимы в тёмной теме */
 }
+
 @media (prefers-color-scheme:dark) {
   :root {
     --themebackgroundclr: #000028;
