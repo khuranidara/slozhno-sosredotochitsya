@@ -48,7 +48,7 @@
 .rec-label {
   position: absolute;
   justify-self: flex-end;
-  color:var(--dec-el);
+  color: var(--dec-el);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: 1rem;
   font-weight: 400px;
@@ -71,7 +71,7 @@
 }
 
 .header__theme-menu {
-  grid-row:1;
+  grid-row: 1;
   justify-self: end; 
   align-self: center;
   margin-block-start: 30px; /*PixelPerfect*/
@@ -80,7 +80,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -116,13 +116,13 @@
 }
 
 .header__title {
-  color:var(--title-txt-clr);
+  color: var(--title-txt-clr);
   text-shadow: var(--txt-shadow);
   font-family: 'IBM Plex Mono', sans-serif;
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
-  grid-row:2;
+  grid-row: 2;
   justify-self: start; 
   align-self: center;
 }
@@ -135,8 +135,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
-  grid-row:3;
-  align-self:center;
+  grid-row: 3;
+  align-self: center;
   justify-self: end;
   margin-bottom: 25px;/*PixelPerfect*/
 }
@@ -419,7 +419,7 @@ main section {
   /* Здесь описывайте стили для больших экранов */
 
   .header__theme-menu {
-    align-self:flex-start;
+    align-self: flex-start;
     justify-self: center;
     margin-block-start: 0;
   }
@@ -444,7 +444,7 @@ main section {
   .third {
     column-gap: 12px;
   }
-  
+
   .second-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
