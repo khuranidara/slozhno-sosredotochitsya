@@ -5,12 +5,12 @@
 */
 
 .page.theme_dark {
-  background-color: #000028;
+  --theme-background-clr: #00183F;
   --button-lable-color: #FF0070;
   --button-border-color: #FF0070;
   --bttn-brdr-clr-hvr: rgba(255, 0, 112, 0.40);
   --bttn-clr-focus:#FF0070;
-  --cover-img: url('/images/cover-image-dark.png');
+  --cover-img: url('../images/cover-image-dark.png');
   --title-txt-clr: #DB00FF;
   --txt-shadow: 4px 4px 0px #FF0070;
   --subtitle-txt-clr:#000028;
@@ -27,12 +27,12 @@
 
 @media (prefers-color-scheme:dark) {
   :root {
-    background-color: #000028;
+    --theme-background-clr: #000028;
     --button-lable-color: #FF0070;
     --button-border-color: #FF0070;
     --bttn-brdr-clr-hvr: rgba(255, 0, 112, 0.40);
     --bttn-clr-focus:#FF0070;
-    --cover-img: url('/images/cover-image-dark.png');
+    --cover-img: url('../images/cover-image-dark.png');
     --title-txt-clr: #DB00FF;
     --txt-shadow: 4px 4px 0px #FF0070;
     --subtitle-txt-clr:#000028;

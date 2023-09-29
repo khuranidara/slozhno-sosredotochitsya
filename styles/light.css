@@ -8,12 +8,13 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --theme-background-clr: #FFF1F7;
   --dis-none: none; /* Элементы будут скрыты в светлой теме */
   --button-border-color: #353430;
   --button-lable-color: #353430;
   --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
   --bttn-clr-focus:#353430;
-  --cover-img: url('/images/cover-image-light.png');
+  --cover-img: url('../images/cover-image-light.png');
   --title-txt-clr: #FFC2E6;
   --subtitle-txt-clr:#353430;
   --subtitle-backgrnd:#FF8DCB;
@@ -29,11 +30,12 @@
 
 @media (prefers-color-scheme:light) {
   :root {
+    --theme-background-clr: #FFF1F7;
     --button-border-color: #353430;
     --button-lable-color: #353430;
     --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
     --bttn-clr-focus:#353430;
-    --cover-img: url('/images/cover-image-light.png');
+    --cover-img: url('../images/cover-image-light.png');
     --title-txt-clr: #FFC2E6;
     --subtitle-txt-clr:#353430;
     --subtitle-backgrnd:#FF8DCB;

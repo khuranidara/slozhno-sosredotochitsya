@@ -3,6 +3,9 @@
   и их переопределение под различные устройства
 */
 :root {
+  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --theme-background-clr: #FFF1F7;
   --button-border-color: #353430;
   --button-lable-color: #353430;
   --bttn-brdr-clr-hvr: rgba(50, 49, 45, 0.40);
