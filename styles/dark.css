@@ -5,6 +5,7 @@
 */
 
 .page.theme_dark {
+  --link-hover: #F1B2CE;
   --theme-background-clr: #00183F;
   --button-lable-color: #FF0070;
   --button-border-color: #FF0070;

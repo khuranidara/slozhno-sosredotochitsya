@@ -7,23 +7,28 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-right: 10px;
+}
+
+.header, .main, .footer {
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header {
   width: 100%;
   min-height: 668px; /* Минимальная высота 668px */
+  height: 100vh; /* Растягивание на всю высоту экрана */
+  box-sizing: border-box;
   position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  grid-template-columns: minmax(355px,auto);
+  grid-template-columns: auto;
   overflow-y: auto; /* Добавляем полосу прокрутки при необходимости */
 }
 
 /* Стили для декоративных уголков */
-.header::before,
-.header::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -31,26 +36,16 @@
 }
 
 /* Задание стилей с использованием единой сущности */
-.header::before,
-.footer::before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
+.decorated-zone::before {
   border-top: 1px solid var(--dec-el);
   border-right: 1px solid var(--dec-el);
   top: 10px;
-  right: 0;
+  right: 10px;
 }
 
-.header::after,
-.footer::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
+.decorated-zone::after {
   bottom: 10px;
-  left: 0;
+  left: 10px;
   border-bottom: 1px solid var(--dec-el);
   border-left: 1px solid var(--dec-el);
 }
@@ -64,7 +59,7 @@
   font-weight: 400; /* Обычный (Regular) */
   line-height: 1.5625rem;
   top:10px;
-  right: 29px;
+  right: 39px;
 }
 
 .rec-label::after {
@@ -154,17 +149,31 @@
   background-color: var(--subtitle-backgrnd);
 }
 
-main section:not(.gallery-section) {
+.intro-section,
+.challenges-section,
+.tips-section {
   margin-bottom: 50px;
-}
-
-/* Задать отступ 40px для последней секции */
-main section:last-child {
-  margin-bottom: 40px;
 }
 
 .intro-section {
   margin-block-start: 40px;
+}
+
+.intro-section article {
+  margin-block-start: 20px;
+}
+
+.challenges-section article {
+  margin-block-start: 20px;
+}
+
+.tips-section article,
+.tips-section h3 {
+  margin-block-start: 20px;
+}
+
+.gallery-section {
+  margin-bottom: 40px;
 }
 
 .section-title {
@@ -177,7 +186,6 @@ main section:last-child {
 }
 
 .subsection-title {
-  margin-block-start: 20px;
   color: var(--main-subtitle-txt-clr);
   font-family: 'IBM Plex Mono', monospace; 
   font-size: 18px;
@@ -202,19 +210,19 @@ main section:last-child {
 }
 
 .article-link:hover {
-  border-bottom: 1px solid var(--button-border-color);
+  border-bottom: 1px solid var(--link-hover);
 }
 
 .article-link:focus {
   padding: 0px 2px;
   outline: none;
-  border: 1px solid var(--button-border-color);
+  border: 1px solid var(--link-hover);
 }
 
 .sub-subsection-title {
   margin-block-start: 20px;
   color: var(--sub-subsection-title-txt-clr);
-  font-family: 'IBM Plex Mono', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 130%;
@@ -238,6 +246,7 @@ main section:last-child {
 .footer {
   width: 100%;
   min-height: 668px;
+  height: 100vh; /* Растягивание на всю высоту экрана */
   display: flex;
   padding-block-start: 10px;
   padding-block-end: 10px;
@@ -261,31 +270,33 @@ main section:last-child {
 
   /* Здесь стили для планшетов */
 
-  .page {
-    padding-right: 20px;
+  .header, .main, .footer {
     padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header {
     padding-block-start: 20px;
     padding-block-end: 20px;
-    height: 100vh;
   }
 
-  .header::before,
-  .footer::before {
+  .decorated-zone::before {
     top: 20px;
-    right: 0;
+    right: 20px;
   }
   
-  .header::after,
-  .footer::after {
+  .decorated-zone::after {
     bottom: 20px;
-    left: 0;
+    left: 20px;
   }
 
   .rec-label {
     top: 20px;
+    right: 50px;
+  }
+
+  .rec-label::after {
+    right: -20px;
   }
 
   .header__theme-menu {
@@ -312,21 +323,28 @@ main section:last-child {
     margin-bottom: 60px;
   }
 
-  .intro-section{
+  .intro-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(4, minmax(23px, max-content));
     column-gap: 20px; /* Задаем промежуток между колонками */
     margin-block-start: 60px;
   }
 
-  .section-title {
-    grid-row: 1 / span 4; /* Занимает с 1 по 4 строку */
-    grid-column: 1 / span 1; /* Занимает 1-ю колонку (1/3 экрана) */
+  /* Стили для всех блоков article */
+  .intro-section article {
+    grid-column: 2 / 3; /* Занимает второй столбец (2/3 ширины) */
+    max-height: max-content; /* Максимальная высота контента */
+    margin-block-start: 0;
   }
 
-  .intro-section .subsection-title:first-of-type {
-    margin-block-start: 0;
+  .intro-section article:not(:last-child) {
+    margin-bottom: 20px;
+  }  
+
+  /* Стили для первого блока */
+  .section-title {
+    grid-column: 1 / 2; /* Занимает первый столбец (1/3 ширины) */
+    grid-row: span 2; /* Занимает 2 строки (вся высота контейнера) */
   }
 
   .challenges-section .section-title {
@@ -336,8 +354,11 @@ main section:last-child {
   .tips-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(11, minmax(23px, max-content));
+    grid-auto-rows: minmax (23px, max-content);
     column-gap: 20px; /* Задаем промежуток между колонками */
+  }
+  .tips-section article {
+    margin-block-start: 0;
   }
 
   .tips-section .section-title {
@@ -397,7 +418,6 @@ main section:last-child {
   .footer {
     padding-block-start: 20px;
     padding-block-end: 20px;
-    height: 100vh;
   }
 
   .footer-title {
@@ -422,10 +442,6 @@ main section:last-child {
     text-shadow: 4px 4px 0px #FF0070;
   }
 
-  .header__subtitle {
-
-  }
-
   .intro-section {
     column-gap: 12px;
   }
@@ -433,12 +449,16 @@ main section:last-child {
   .tips-section {
     column-gap: 12px;
   }
-
-  .challenges-section-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, minmax(23px, max-content));
-    grid-auto-flow: column;
-    column-gap: 20px;
+  
+  .challenges-section {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);  
+    grid-auto-rows: max-content;
+    column-gap: 20px; 
   }
+
+  .challenges-section .section-title {
+    grid-column: 1/4;
+  }
+
 } 
