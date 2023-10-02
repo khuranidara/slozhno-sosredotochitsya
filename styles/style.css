@@ -96,7 +96,7 @@
   background-color: transparent;
   color: var(--button-lable-color);
   font-weight: 400;
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   line-height: 100%;
   font-style: normal;
@@ -122,7 +122,7 @@
 .header__title {
   color: var(--title-txt-clr);
   text-shadow: var(--txt-shadow);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: var(--title-font-size-mobile);
   font-weight: 700;
   line-height: 82.5%;
@@ -134,7 +134,7 @@
 .header__subtitle {
   text-wrap: wrap;
   color: var(--subtitle-txt-clr);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -178,7 +178,7 @@
 
 .section-title {
   color: var(--main-content-subtitle);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
@@ -187,7 +187,7 @@
 
 .subsection-title {
   color: var(--main-subtitle-txt-clr);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
@@ -197,7 +197,7 @@
 .main-content-txt {
   margin-block-start: 10px;
   color: var(--main-txt-clr);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 18px;
   font-weight: 400;
   line-height: 130%;
@@ -260,10 +260,10 @@
   font-size: var(--title-font-size-mobile);
   color:var(--title-txt-clr);
   text-shadow: var(--footer-shadow);
-  font-family: 'IBM Plex Mono', monospace; 
+  font-family: 'IBM Plex Mono', monospace;
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; 
+  line-height: 82.5%;
 }
 
 @media screen and (width >= 768px) {
@@ -451,10 +451,10 @@
   }
   
   .challenges-section {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: max-content;
-    column-gap: 20px; 
+    column-gap: 20px;
   }
 
   .challenges-section .section-title {
