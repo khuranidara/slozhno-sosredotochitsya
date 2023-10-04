@@ -65,19 +65,19 @@
 .rec-label::after {
   content: "";
   position: absolute;
+  top: 9px;
+  right: -20px;
   background-color: var(--dec-el);
   width: 9px;
   height: 9px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--dec-el);
-  top: 9px;
-  right: -20px;
 }
 
 .header__theme-menu {
+  align-self: center;
   grid-row: 1;
   justify-self: end;
-  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -108,7 +108,7 @@
 .header__theme-menu-button_active {
   /* Делаем кнопку недоступной для клика */
   pointer-events: none;
-  border: 1px solis var(--button-border-color);
+  border: 1px solid var(--button-border-color);
 }
 
 .header__theme-menu-button:hover {
@@ -116,7 +116,8 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: 1px solid var(--bttn-clr-focus); /*Используем outline*/
+  border-bottom: 1px solid var(--bttn-clr-focus);
+  outline: none;
 }
 
 .header__title {
@@ -128,7 +129,6 @@
   line-height: 82.5%;
   grid-row: 2;
   justify-self: start;
-  align-self: center;
 }
 
 .header__subtitle {
@@ -159,16 +159,11 @@
   margin-block-start: 40px;
 }
 
-.intro-section article {
+.article {
   margin-block-start: 20px;
 }
 
-.challenges-section article {
-  margin-block-start: 20px;
-}
-
-.tips-section article,
-.tips-section h3 {
+.tips-section .subsection-title {
   margin-block-start: 20px;
 }
 
@@ -299,18 +294,12 @@
     right: -20px;
   }
 
-  .header__theme-menu {
-    align-self: center;
-  }
-
   .header__title {
-    align-self: center;
     margin-left: -20px;
     font-size: var(--title-font-size-desktop); /* Используем переменную для планшетов и десктопов */
   }
 
   .header__subtitle {
-    align-self: center;
     width: 50%; /* Занимает 50% ширины контейнера */
     margin-bottom: 0;
   }
@@ -331,13 +320,13 @@
   }
 
   /* Стили для всех блоков article */
-  .intro-section article {
+  .intro-section .article {
     grid-column: 2 / 3; /* Занимает второй столбец (2/3 ширины) */
     max-height: max-content; /* Максимальная высота контента */
     margin-block-start: 0;
   }
 
-  .intro-section article:not(:last-child) {
+  .intro-section .article:not(:last-child) {
     margin-bottom: 20px;
   }  
 
@@ -354,7 +343,7 @@
   .tips-section {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-auto-rows: minmax (23px, max-content);
+
     column-gap: 20px; /* Задаем промежуток между колонками */
   }
   .tips-section article {
@@ -376,7 +365,6 @@
 
   .img-container {
     margin-block-start: 20px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
